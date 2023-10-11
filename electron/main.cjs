@@ -2,7 +2,15 @@
 const { log } = require('console')
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const { menubar } = require('menubar')
 
+const mb = menubar()
+
+mb.on('ready', () => {
+    console.log('app is ready');
+    // your app code here
+  })
+  
 if (require('electron-squirrel-startup')) app.quit();
 
 const isDevEnvironment = process.env.DEV_ENV === 'true'

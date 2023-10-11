@@ -47,7 +47,7 @@
 			</a>
 		</div>
 	</section>
-
+ 
 	
 	<!-- Middle Part -->
 	<section class="flex flex-col items-center justify-center mt-6">
