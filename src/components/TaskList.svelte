@@ -13,12 +13,10 @@
     }
 </script>
 
-<ul class="flex items-start flex-col mt-[36px] w-full h-full overflow-scroll ">
+<ul class="flex items-start flex-col pt-5 w-full h-screen min-h-screen overflow-auto">
     {#each tasks ?? [] as { id, text }}
         <li class="w-full">
             <Checkbox labelText={text} {id} />
-            <Checkbox labelText={text} {id} />
-
         </li>
 
 

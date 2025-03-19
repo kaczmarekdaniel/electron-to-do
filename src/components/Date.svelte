@@ -1,7 +1,6 @@
 <script>
     import ChevronRight from "../assets/chevron-right.svg";
     import ChevronLeft from "../assets/chevron-left.svg";
-    import { onMount } from "svelte";
     import { calculateDate } from "../utils/date";
     import { getContext, setContext } from 'svelte'
 
@@ -9,7 +8,6 @@
     let count = 0;
     let today = calculateDate(count);
     const store = getContext("store");
-
     const increment = () => {
         count += 1;
     };
